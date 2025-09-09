@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "esbuild": "^0.25.9",
+    "minimist": "^1.2.8",
+    "snabbdom": "^3.6.2",
+    "typescript": "^5.9.2"
+  },
+  "name": "domdiff",
+  "version": "1.0.0",
+  "description": "手写diff算法",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node scripts/dev.js reactivity -f esm"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.5.21"
+  }
+}
