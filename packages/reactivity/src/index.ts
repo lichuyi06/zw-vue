@@ -1,2 +1,2 @@
-import { isObject } from "@zw/shared";
-console.log(isObject("abc"));
+export * from "./effect";
+export * from "./reactive";
