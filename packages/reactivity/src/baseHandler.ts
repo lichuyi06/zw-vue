@@ -6,9 +6,10 @@ export const mutableHandler: ProxyHandler<any> = {
         if (key === ReactiveFlags.IS_REACTIVE) {
             return true
         }
+        return Reflect.get(target, key, receiver)
     },
     set(target, key, value,receiver) {
         // 这里可以添加一些逻辑
-        return true
+       return Reflect.set(target, key, value,receiver)
     }
 }
