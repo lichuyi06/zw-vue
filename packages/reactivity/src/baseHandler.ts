@@ -9,7 +9,6 @@ export const mutableHandler: ProxyHandler<any> = {
         return Reflect.get(target, key, receiver)
     },
     set(target, key, value,receiver) {
-        // 这里可以添加一些逻辑
        return Reflect.set(target, key, value,receiver)
     }
 }
